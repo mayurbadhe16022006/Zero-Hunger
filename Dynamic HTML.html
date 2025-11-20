@@ -1,0 +1,18 @@
+<html>
+    <body>
+      <p id ="myPara"> Keep cursor over me</p>
+      <script type="text/Javascript">
+            document.getElementById("myPara").addEventListener('click', paraClicked);
+            document.getElementById("myPara").addEventListener('mouseover', mouseoverevent);
+            function paraClicked()
+            {
+             document.getElementById("myPara").style.color="red";
+              document.getElementById("myPara").innerHTML ="These are new contents";
+            } 
+            function mouseoverevent()
+            {
+                   document.getElementById("myPara").style.backgroundColor="yellow";
+            }
+            </script>
+            </body>
+            </html>
