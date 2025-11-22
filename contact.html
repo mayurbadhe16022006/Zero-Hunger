@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zero Hunger | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Contact Us</h1></header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="causes.html">Causes</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="how-to-help.html">How You Can Help</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<div class="container">
+    <div class="card">
+        <h2>Send a Message</h2>
+        <form id="contactForm">
+            <label>Name</label><br>
+            <input type="text" id="name" class="input-box">
+            <label>Email</label><br>
+            <input type="email" id="email" class="input-box">
+            <label>Message</label><br>
+            <textarea id="message" class="input-box" style="height:120px;"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+       
+    </div>
+</div>
+<footer>© 2025 Zero Hunger Initiative</footer>
+<script>
+    document.getElementById("contactForm").onsubmit = function(event) {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill out all fields.");
+            event.preventDefault();
+        } else {
+            alert("Message sent successfully!");
+        }
+    };
+    console.log("Contact page JS working");
+</script>
+</body>
+</html>
